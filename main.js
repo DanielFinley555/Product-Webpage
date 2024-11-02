@@ -24,6 +24,13 @@ fetch('https://www.course-api.com/javascript-store-products')
         });
     })
 
+
+
+//Task 3: Display Product Details Dynamically
+//Was not able to get the images to show properly
+
+
+
 //Task 4: Handle Errors Gracefully
 
     //Using Catch to handle errors
@@ -31,4 +38,4 @@ fetch('https://www.course-api.com/javascript-store-products')
         console.error('There was a problem with the fetch operation:', error);
     });
 
-    //When there is an error it succesfully says the error message. I have since fixed the error though, so it no longer says it.
+    //When there is an error it succesfully says the error message. I have since fixed the error though, so it no longer says it
