@@ -19,7 +19,7 @@ fetch('https://www.course-api.com/javascript-store-products')
     .then(products => {
         products.forEach(product => {
             const listItem = document.createElement('li');
-            listItem.textContent = `${Company.Name} - $${product.price} - ${product.name} - ${product.image}`;
+            listItem.textContent = `${product.fields.company} - $${product.fields.price} - ${product.fields.name} - ${product.fields.image}`;
             productList.appendChild(listItem);
         });
     })
@@ -30,3 +30,5 @@ fetch('https://www.course-api.com/javascript-store-products')
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
     });
+
+    //When there is an error it succesfully says the error message. I have since fixed the error though, so it no longer says it.
